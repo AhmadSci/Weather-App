@@ -10,6 +10,8 @@ A simple Web app that takes a ZIP code and your current mood as input, and retur
 * [Node.js](https://nodejs.org/en/download/)
 * Express (by running `npm install express` in the Terminal)
 * Body Parser (by running `npm install body-parser` in the Terminal)
+## Change `YOUR API KEY HERE` in `app.js` with your API key
+![apiKey](/apiKey.jpg)
 
 # Functionality
 ## Navigation

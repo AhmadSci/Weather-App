@@ -52,7 +52,7 @@ label {
     align-items: center;
     display: flex;
     flex-wrap:wrap;
-    background: url("../Hero.jpg");
+    background: url("../resources/Hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;

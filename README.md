@@ -2,7 +2,7 @@
 A simple Web app that takes a ZIP code and your current mood as input, and returns current temp and your mood :)
 
 # Preview
-![Demo](/demo.gif)
+![Demo](/resources/demo.gif)
 
 # How to Use
 
@@ -11,7 +11,7 @@ A simple Web app that takes a ZIP code and your current mood as input, and retur
 * Express (by running `npm install express` in the Terminal)
 * Body Parser (by running `npm install body-parser` in the Terminal)
 ## Change `YOUR API KEY HERE` in `app.js` with your API key
-![apiKey](/apiKey.jpg)
+![apiKey](/resources/apiKey.jpg)
 
 # Functionality
 ## Navigation

@@ -1,6 +1,6 @@
 /* Global Variables */
 const baseURL = "https://api.openweathermap.org/data/2.5/weather?zip=";
-const apiKey = "YOUR API KEY HERE";
+const apiKey = "2ce0b9ed74673bc52166c2445931ed4f";
 const beforeApi = ",&appid=";
 // to get the temperature in Celsius
 const afterApi = "&units=metric";
@@ -67,8 +67,8 @@ const Weather = () => {
     //checking the data received and taking whats needed through destructuring the "data" object recieved
     if (data) {
       const {
-        main: {temp},
-        name: city,
+        main:{temp},
+        name:city,
       } = data;
   
       const allInfoToDisplay = {

@@ -22,7 +22,6 @@ app.use(express.static('website'));
 
 
 // Setup Server
-const host = "localhost:";
 const port = app.listen(process.env.PORT || 5000);
 // If the request is seccessful (status code 200) it send to the empty object
 const getAll = (req, res) => res.status(200).send(projectData);
@@ -43,5 +42,5 @@ app.post("/add", postData);
 /* Spin up the server*/
 const server = app.listen(port, listening);
  function listening(){
-    console.log(`running on ${host} ${port}`);
+    console.log(`running on ${port}`);
   };

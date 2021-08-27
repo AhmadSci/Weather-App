@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -66,12 +69,32 @@ label {
 
 }
 .people{
-    margin-top: 50px;
-    width: 30%;
-    min-width: 500px;
-    color: transparent;
+    margin-top: 6%;
+    width: 70%;
+    max-width: 900px;
+    min-width: 420px;
 }
 
+@media (max-width: 600px){
+    .headline{
+        margin-top: 10%;
+    }
+    .navbar{
+        width: 100%;
+        margin-top: 4%;
+    }
+    a {
+        font-size: .8em;
+    }
+    .logo{
+        width: 7%;
+        height: 7%;
+    }
+    label{
+        font-size: 1em;
+    }
+    
+}
 .zip{
     display: flex;
     justify-content: center;
@@ -92,6 +115,7 @@ label {
     outline: none;
     margin: 2% 0px;
     font-size: .5em;
+    width: 50%;
     transition: .7s;
 }
 #zip:focus{
@@ -106,6 +130,7 @@ label {
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     font-size: 2em;
     color: black;
     background-color: #e7d3f6;
@@ -120,6 +145,7 @@ label {
     outline: none;
     margin: 2% 0px;
     font-size: .5em;
+    width: 70%;
     transition: .7s;
 }
 #feelings:focus{
@@ -141,6 +167,7 @@ label {
     border: none;
     border-radius: 20px;
     width: 40%;
+    min-width: 300px;
     height: 35%;
     font-size: 1.5em;
     font-family: "Abril Fatface";

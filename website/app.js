@@ -5,6 +5,7 @@ const beforeApi = ",&appid=";
 // to get the temperature in Celsius
 const afterApi = "&units=metric";
 const server = "https://ahmed-weather-app1.herokuapp.com";
+const button = document.getElementById("generate");
 
 // Create a new date instance dynamically with JS
 let d = new Date();
@@ -88,3 +89,8 @@ const Weather = () => {
 
 // check if the button is clicked
 document.getElementById("generate").addEventListener("click", Weather);
+
+button.addEventListener("click", function scrollTo (){
+  let toScrollTo = document.querySelector(".title");
+  toScrollTo.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+});

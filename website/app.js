@@ -4,7 +4,7 @@ const apiKey = "2ce0b9ed74673bc52166c2445931ed4f";
 const beforeApi = ",&appid=";
 // to get the temperature in Celsius
 const afterApi = "&units=metric";
-const server = window.location.href;
+const server = "https://ahmed-weather-app1.herokuapp.com";
 
 // Create a new date instance dynamically with JS
 let d = new Date();
@@ -43,7 +43,7 @@ const postData = async (url = "", allInfoToDisplay = {}) => {
 
 // retreiving weather data from the server and updating the UI
 const updateUI = async () => {
-    const res = await fetch(server + "all");
+    const res = await fetch(server + "/all");
     try {
       const savedData = await res.json();
   
@@ -78,7 +78,7 @@ const Weather = () => {
         mood,
       };
   
-      postData(server + "add", allInfoToDisplay);
+      postData(server + "/add", allInfoToDisplay);
         
       // calling to update the UI with collected INFO
       updateUI();

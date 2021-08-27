@@ -23,7 +23,7 @@ app.use(express.static('website'));
 
 // Setup Server
 const host = "localhost:";
-const port = 3000;
+const port = app.listen(process.env.PORT || 5000);
 // If the request is seccessful (status code 200) it send to the empty object
 const getAll = (req, res) => res.status(200).send(projectData);
 // GET Route

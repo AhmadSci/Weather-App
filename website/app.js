@@ -4,7 +4,7 @@ const apiKey = "2ce0b9ed74673bc52166c2445931ed4f";
 const beforeApi = ",&appid=";
 // to get the temperature in Celsius
 const afterApi = "&units=metric";
-const server = "http://localhost:3000"
+const server = "http://localhost:"+ 5000;
 
 // Create a new date instance dynamically with JS
 let d = new Date();
